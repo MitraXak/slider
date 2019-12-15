@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.block{
+    display: flex;
+    justify-content: center;
+}
+.carousel{
+    position: relative;
+    background: black;
+    height: 100%;
+}
+.slide{
+    background: black;
+    font-size: 20pt;
+    color: white;
+    position: relative;
+    max-width: 800px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+}
+
+.caption, .discription, .discriptionTwo{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.caption{
+    top: 30%;
+}
+.discription{
+    top: 40%;
+}
+.discriptionTwo{
+    top: 50%;
+}
+.slide img{
+    opacity: 0.5;
+    width: 100%;
+    height: 400px;
+}
+.podSlide{
+    position: absolute;
+    display: flex;
+}
+.podslide{
+    cursor: pointer;
+    width: 25%;
+}
+.currentSlide{
+    border: 5px solid red;
+}
+.podSlide img{
+    width: 100%;
+    height: 100%;
+}
+.active{
+    display: block;
+}
+.nonActive{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    font-size: 50pt;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.next{
+    right: 0;
+}
+.subPrev, .subNext{
+    position: relative;
+    color: white;
+    top: 40%;
+    padding: 0 25px;
+}
+
+.prev:hover, .next:hover{
+    background: rgb(0,0,0, 0.6);
+}
+
